@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    background: #123;
+}
+body {
+    font: normal 1.1em helvetica, calibri, sans-serif;
+    width: 70%;
+    background: rgba(225, 215, 205, 0.5);
+    margin: 2em auto;
+    border: 1px rgba(25, 50, 75, 0.75) outset;
+    box-shadow: 5px 5px 5px rgba(225, 225, 225, 0.85);
+}
+nav {
+    background-color: rgba(25, 50, 75, 0.75);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+nav a {
+    float: left;
+    margin: 0 1em;
+    padding: 1em 0.75em;
+    text-decoration: none;
+    color: #fff;
+    background: rgba(125, 125, 50, 0.75);
+}
+nav a:hover {
+    background: rgba(50, 150, 50, 0.5);
+    text-decoration: underline;
+}
+nav p {
+    font: bold 0.75em sans-serif;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
+@font-face {
+    font-family: 'Orbitron';
+    src: url(https://fonts.gstatic.com/s/orbitron/v9/yMJRMIlzdpvBhQQL_Qq7dy0.woff2);
+}
+header h1 {
+    font: bold 2.55em Orbitron, sans-serif;
+    color: #efc;
+    margin: 1em 0;
+    text-shadow: 5px 5px 5px rgba(75, 50, 25, 0.75);
+    text-align: center;
+}
+section h2 {
+    font: normal 1.35em sans-serif;
+    margin: 2.5em 1.5em;
+    text-align: center;
+}
+section form {
+    width: 50%;
+    border: 1px solid #000;
+    margin: 1em auto;
+}
+section form p {
+    font: bold 1em sans-serif;
+    margin: 1em;
+    text-align: center;
+}
+section form p input {
+    padding: 0.5em 0.75em;
+    margin: 0.5em;
+}
+input[type="radio"] {
+    margin: 0.75em 0.25em 0.75em 17.5em;
+    padding: 0.5em;
+}
+section form p select {
+    margin: 0.5em 0 0.5em 1.5em;
+    padding: 0.5em;
+}
+section ul li {
+    margin: 2.5em 12.5em;
+    list-style-type: none;
+}
+section ul li a {
+    background: rgba(50, 50, 200, 0.75);
+    border-radius: 5%;
+    color: #fff;
+    padding: 0.5em;
+    text-decoration: none;
+}
+section ul li a:hover {
+    background: rgba(225, 25, 5, 0.5);
+    padding: 0.5em;
+}
+section ul li button {
+    background: rgba(100, 100, 100, 0.85);
+    padding: 0.5em 1em;
+    color: #fff;
+}
+section ul li button:hover {
+    background: rgba(200, 200, 200, 0.75);
+    color: #000;
+    border: 2px #fff solid;
+}
+p {
+    font: normal 1em sans-serif;
+    color: #000;
+    margin: 0.5em 1.5em;
+    text-align: justify;
+}
+footer {
+    width: 100%;
+    background: rgba(215, 195, 215, 0.75);
+    margin-top: 5em;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.35em;
+    border-right: 5px rgba(25, 50, 75, 1) solid;
+    border-left: 5px rgba(200, 200, 150, 1) solid;
+    font: bold 0.8em sans-serif;
+    text-align: center;
+}
+footer small::before, footer small::after {
+    content: "\2605";
+    color: #129;
+    margin: 0 0.25em;
+    font-size: 1.25em;
+}

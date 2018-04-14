@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulario de inscripción</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <nav>
+        <a href="index.html">Volver al inicio</a>
+        <a href="ejercicios.html">Volver atrás</a>
+        <p>Examen práctico de la UF1844 - Curso "Desarrollo de aplicaciones con tecnologías web"</p>
+    </nav>
+    <header>
+        <h1>Formulario de inscripción</h1>
+    </header>
+    <section>
+        <h2>Rellena los siguientes campos:</h2>
+        <p>Los campos marcados con * son obligatorios.</p>
+        <form method="post" action="Servlet03" id="datos">
+            <p>*Nombre: <input type="text" name="nombre" placeholder="Nombre" maxlength="30" required /></p>
+            <p>*Apellidos: <input type="text" name="apellidos" placeholder="Apellido Apellido" maxlength="50" required /></p>
+            <p>*Edad: <input type="number" name="edad" placeholder="Edad" required /> </p>
+            <p>*Sexo: </p>
+                <input type="radio" name="sexo" value="Hombre" />Hombre<br/>
+                <input type="radio" name="sexo" value="Mujer" />Mujer<br/>
+                <input type="radio" name="sexo" value="Indefinido" checked />Indefinido<br/>
+            <p>*Curso: <select name="curso" form="datos">
+                <option>JavaScript</option>
+                <option>Java</option>
+                <option>PHP</option>
+            </select></p>
+            <p>*E-mail: <input type="email" name="email" placeholder="some@something.some" maxlength="50" required /></p>
+            <p><input type="submit" name="entrar" value="Enviar" /><input type="reset" /></p>
+        </form>
+    </section>
+    <footer>
+        <small> David A. Pérez Vera</small>
+    </footer>
+</body>
+</html>
